@@ -1,0 +1,57 @@
+fieldset , table{
+	text-align:center;
+	border:0px;
+	font-family:Tahoma;
+	font-size:13px;
+	
+}
+td{
+	background:url(images/post_bg.jpg) repeat-y;
+	padding-left:22px;
+	border-top:1px dotted #000;
+	border-left:1px dotted #000;
+}
+
+.comments-box-top {
+    background-position: 565px 0;
+	background:url(images/post_bg.jpg) repeat-x;
+    background-repeat: no-repeat;
+    border-radius: 10px 5px 5px 5px;
+    color: #000;
+    font-family: "B Koodak";
+    font-size: 16px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+	margin-top:0px;
+    text-align: center;
+    width: 700px;
+}
+
+.container {background:url(images/footer_bg.png) repeat-x;border:1px solid #000099;height:290px;margin:100px 60px 10px 40px;width:880px;}
+.post_more {
+    background: url("images/btnmore.png") no-repeat scroll right top transparent;
+    float: left;
+    height: 53px;
+    transition: all 0.5s ease-out 0s;
+    width: 209px;
+}
+
+.target {
+    background-attachment: scroll;
+    background-image: url("images/top_key.png");
+    background-position: 0 top;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    float: left;
+    font-family: "BYekan";
+    height: 29px;
+    line-height: 27px;
+    margin: 0 0 0 20px;
+    padding: 0 0 0 12px;
+    text-align: center;
+    text-shadow: 1px 1px #89B22E;
+    width: 127px;
+}
+

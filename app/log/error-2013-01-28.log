@@ -1,0 +1,75 @@
+[1/28/2013 3:06:34 PM] Form Population Filter encountered the following errors while parsing the document:
+
+[Fatal #76] Line 13: Opening and ending tag mismatch: link line 9 and head
+
+[Fatal #76] Line 56: Opening and ending tag mismatch: link line 8 and html
+
+[Fatal #77] Line 59: Premature end of data in tag head line 4
+
+[Fatal #77] Line 59: Premature end of data in tag html line 3
+
+
+Non-fatal errors are typically recoverable; you may set the 'ignore_parse_errors' configuration parameter to LIBXML_ERR_WARNING or LIBXML_ERR_ERROR (default) to suppress them.
+If you set 'ignore_parse_errors' to LIBXML_ERR_FATAL (recommended for production), Form Population Filter will silently abort execution in the event of fatal errors.
+Regardless of the setting, all errors encountered will be logged.
+
+Response content:
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<base href="http://127.0.0.2/" />
+		<title>Bloggie</title>
+        <link media="screen" href="style.css"  type="text/css" rel="stylesheet" >
+		<link media="screen" href="main.css"  type="text/css" rel="stylesheet" >
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+        <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />        
+		
+	</head>
+	<body>
+	<center>
+<div>
+  <h2><b style="color:#F00;">Error</b> The Admin Page</h2>
+  please check the username or password
+  <form  action="/index.php/login" method="post">
+    <fieldset class="field-set">
+      <div>
+        <div>
+          <label for="username">Username:</label>
+        </div>
+        <div>
+          <input class="input-text" type="text" id="username" name="username" />
+        </div>
+      </div>
+      <div>
+        <div>
+          <label for="password">Password:</label>
+        </div>
+        <div>
+          <input class="input-text" type="password" id="password" name="password" />
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="field-set">
+      <div>
+        <input class="input-submit" type="submit" name="login" value="Log In" />
+      </div>
+    </fieldset>  
+  </form>
+</div>
+</center>    <div class="middle" style="margin-top:100px;">
+        <div class="footer">
+<div class="footer_right"></div>
+<div class="footer_body">
+<div class="text">Copyright © 2013| Designed by <strong>Mehrdad Masoomi</strong> With Agavi FreamWork<br />Malayer University</div>
+</div>
+<div class="footer_left"></div>
+</div>
+
+<!-- This page took 0.042257070541382 seconds to process -->        </div>
+	</body>
+</html>
+
+
+<!-- This page took 0.22852396965027 seconds to process -->

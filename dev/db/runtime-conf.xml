@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <propel>
+    <datasources default="bloggie">
+      <datasource id="bloggie">
+        <adapter>mysql</adapter>
+        <connection>
+          <dsn>mysql:host=localhost;dbname=bloggie</dsn>
+          <user>root</user>
+          <password>123456</password>
+        </connection>
+		</datasource>
+    </datasources>
+  </propel>
+</config>
+
+

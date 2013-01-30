@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="bloggie" defaultIdMethod="native" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="http://xsd.propelorm.org/1.6/database.xsd">
+  <table name="username">
+  	<column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
+  	<column name="name" type="varchar" required="true"/>
+  	<column name="email" type="varchar" required="true"/>
+  	<column name="enabled" type="boolean" default="true" required="true"/>
+  	<column name="login_count" type="integer" default="0" required="true"/>
+  	<column name="failed_login_count" type="integer" default="0" required="true"/>
+  	<column name="uname" type="varchar" required="true"/>
+  	<column name="password" type="VARCHAR" required="true"/>
+  	<column name="modified" type="TIMESTAMP" required="true"/>
+  	<column name="note" type="VARCHAR" required="false"/>
+  	<unique name="uname">
+  		<unique-column name="uname"/>
+  	</unique>
+  </table>
+  
+  <table name="user_access">
+  	<column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
+  	<column name="user_id" type="integer" required="true"/>
+  	<column name="access" type="varchar" required="true"/>
+  	<foreign-key foreignTable="username">
+  		<reference local="user_id" foreign="id"/>
+  	</foreign-key>
+  </table>
+  
+    <table name="news_subject">
+  	<column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
+  	<column name="name" type="VARCHAR" required="true"/>
+  	<column name="is_desc" type="BOOLEAN" required="true"/>
+  	<column name="short_desc" type="VARCHAR" size="1000" required="true"/>
+  	<column name="desc" type="LONGVARCHAR" required="true"/>
+  	<column name="prio" type="integer" required="true"/>
+  	<column name="category" type="VARCHAR" required="true"/>
+  	<column name="auter" type="VARCHAR" required="false" />
+  	<column name="date" type="VARCHAR" size="30" required="true"/>
+  </table>
+</database>

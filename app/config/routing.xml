@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ae:configurations xmlns:ae="http://agavi.org/agavi/config/global/envelope/1.0" xmlns="http://agavi.org/agavi/config/parts/routing/1.0">
+	<ae:configuration>
+		<routes>
+		
+		 <route name="index" pattern="^/$" module="default" action="%actions.default_action%" />
+			
+				<route name="login" pattern="^/login$" module="Default"  action="Login" />
+				<route name="logout" pattern="^/logout$" module="Default" action="Logout" />
+				<route name="admin" pattern="^/admin$" module="Default" action="Admin" />
+				
+				<route name="news" pattern="^/news" module="News">
+				<route name=".admin" pattern="^/admin$" action="Admin"/>
+				<route name=".create" pattern="^/create$" action="Create"/>
+				<route name=".modiriat" pattern="^/modiriat$" action="Modiriat"/>
+				<route name=".edit" pattern="^/edit/(id:\d+)$" action="Edit"/>
+				<route name=".delete" pattern="^/delete/(id:\d+)$" action="Delete"/>
+				<route name=".change" pattern="^/change$" action="change"/>	
+				<route name=".display" pattern="^/display/(id:\d+)$" action="Display"/>
+			</route>
+ 		
+	
+		
+		</routes>
+	</ae:configuration>
+</ae:configurations>
